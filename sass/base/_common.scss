@@ -1,0 +1,29 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+.navigation__item,
+.contact-list__item,
+.softskills__item,
+.occupation__item,
+.card-list__item,
+.footer-item,
+.portfolio-nav-item,
+.project-item,
+.soc__item,
+.client-item {
+  list-style-type: none;
+}
+
+.navigation__link,
+.contact-list__mail,
+.contact-list__tel,
+.header-logo,
+.footer-logo,
+.map-link,
+.contact-icon-link,
+.footer-contact-mail,
+.footer-contact-tel,
+.project-link {
+  text-decoration: none;
+}
