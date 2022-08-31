@@ -1,12 +1,23 @@
 .softskills {
-  padding-bottom: 0;
+  padding-top: 60px;
+  @include desktop {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .softskills__list {
   display: flex;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .softskills__item {
-  width: 270px;
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .softskills__headline {
   text-transform: uppercase;
@@ -15,6 +26,13 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  text-align: center;
+  @include tablet {
+    text-align: left;
+  }
+  @include desktop {
+    text-align: left;
+  }
 }
 .softskills__text {
   color: var(--second-text-color);
@@ -23,7 +41,7 @@
   letter-spacing: 0.03em;
 }
 .softskills__img {
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
