@@ -2,6 +2,9 @@ body {
   font-family: var(--Roboto);
   color: #212121;
 }
+.no-scroll {
+  overflow: hidden;
+}
 .navigation__item,
 .contact-list__item,
 .softskills__item,
@@ -11,7 +14,10 @@ body {
 .portfolio-nav-item,
 .project-item,
 .soc__item,
-.client-item {
+.client-item,
+.menu-contact-list__item,
+.menu-nav__item,
+.menu-social-item {
   list-style-type: none;
 }
 
@@ -24,6 +30,10 @@ body {
 .contact-icon-link,
 .footer-contact-mail,
 .footer-contact-tel,
-.project-link {
+.project-link,
+.menu-nav__link,
+.menu-contact-list__tel,
+.menu-contact-list__mail,
+.menu-social-link {
   text-decoration: none;
 }
