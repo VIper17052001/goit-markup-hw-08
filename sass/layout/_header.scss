@@ -237,6 +237,12 @@
   &.is-hidden {
     transform: translate(-50%, -50%) scale(0);
   }
+  > .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
 }
 .menu-nav__list {
   display: flex;
@@ -259,7 +265,6 @@
   flex-direction: column;
   row-gap: 32px;
   margin-bottom: 64px;
-  margin-top: 302px;
 }
 .menu-contact-list__tel {
   font-weight: 500;
