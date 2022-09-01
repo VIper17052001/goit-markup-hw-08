@@ -15,6 +15,7 @@
     refs.menu.classList.toggle("is-hidden");
     refs.body.classList.toggle("no-scroll");
     refs.body.classList.toggle("no-scroll");
+    bodyScrollLock.enableBodyScroll(document.body);
   }
 
   function removeMenu() {
