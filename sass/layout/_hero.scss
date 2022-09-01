@@ -9,15 +9,28 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/herobackground-mob.jpg);
-
+    url(../img/herobackground-mob.jpg);
+  @include retina {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/herobackground-mob-x2.jpg);
+  }
   @include tablet {
     width: 100%;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/herobackground-tablet.jpg);
+      url(../img/herobackground-tablet.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/herobackground-tablet-x2.jpg);
+    }
   }
   @include desktop {
     max-width: 1600px;
@@ -27,7 +40,14 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero-background.jpg);
+      url(../img/hero-background.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/herobackground-desktop-x2.jpg);
+    }
   }
 }
 .hero__flex {
